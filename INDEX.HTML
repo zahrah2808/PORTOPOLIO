@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portfolio Python Developer</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#0f172a;
+    color:white;
+}
+
+header{
+    position:fixed;
+    width:100%;
+    top:0;
+    z-index:1000;
+    background:rgba(15,23,42,0.95);
+    backdrop-filter:blur(10px);
+}
+
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 10%;
+}
+
+.logo{
+    font-size:28px;
+    font-weight:bold;
+    color:#38bdf8;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+}
+
+nav ul li{
+    margin-left:25px;
+}
+
+nav ul li a{
+    text-decoration:none;
+    color:white;
+    transition:0.3s;
+}
+
+nav ul li a:hover{
+    color:#38bdf8;
+}
+
+.hero{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:100px 10%;
+}
+
+.hero-content h1{
+    font-size:60px;
+    margin-bottom:10px;
+}
+
+.hero-content span{
+    color:#38bdf8;
+}
+
+.hero-content p{
+    max-width:700px;
+    margin:20px auto;
+    color:#cbd5e1;
+}
+
+.btn{
+    display:inline-block;
+    padding:12px 25px;
+    background:#38bdf8;
+    color:white;
+    text-decoration:none;
+    border-radius:30px;
+    margin-top:15px;
+    transition:0.3s;
+}
+
+.btn:hover{
+    background:#0ea5e9;
+}
+
+section{
+    padding:100px 10%;
+}
+
+.section-title{
+    text-align:center;
+    margin-bottom:50px;
+    font-size:40px;
+    color:#38bdf8;
+}
+
+.about{
+    display:grid;
+    grid-template-columns:1fr 2fr;
+    gap:40px;
+    align-items:center;
+}
+
+.profile{
+    width:250px;
+    height:250px;
+    border-radius:50%;
+    background:#1e293b;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:80px;
+}
+
+.skills{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+    gap:20px;
+}
+
+.skill-card{
+    background:#1e293b;
+    padding:25px;
+    border-radius:15px;
+    text-align:center;
+    transition:0.3s;
+}
+
+.skill-card:hover{
+    transform:translateY(-8px);
+}
+
+.projects{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:25px;
+}
+
+.project-card{
+    background:#1e293b;
+    padding:25px;
+    border-radius:15px;
+    transition:0.3s;
+}
+
+.project-card:hover{
+    transform:translateY(-10px);
+}
+
+.project-card h3{
+    color:#38bdf8;
+    margin-bottom:10px;
+}
+
+.contact{
+    text-align:center;
+}
+
+.contact p{
+    margin:10px 0;
+}
+
+footer{
+    text-align:center;
+    padding:20px;
+    background:#020617;
+    color:#94a3b8;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<nav>
+<div class="logo">Portfolio</div>
+<ul>
+<li><a href="#home">Home</a></li>
+<li><a href="#about">Tentang</a></li>
+<li><a href="#skills">Skill</a></li>
+<li><a href="#projects">Project</a></li>
+<li><a href="#contact">Kontak</a></li>
+</ul>
+</nav>
+</header>
+
+<section class="hero" id="home">
+<div class="hero-content">
+<h1>Halo, Saya <span>Zahrah</span></h1>
+<h2>Python Developer & Data Enthusiast</h2>
+<p>
+Mahasiswa yang memiliki minat pada pemrograman Python,
+pengembangan aplikasi, analisis data, dan machine learning.
+</p>
+<a href="#projects" class="btn">Lihat Project</a>
+</div>
+</section>
+
+<section id="about">
+<h2 class="section-title">Tentang Saya</h2>
+
+<div class="about">
+<div class="profile">
+👩‍💻
+</div>
+
+<div>
+<h3>Python Programmer</h3>
+<p>
+Saya memiliki pengalaman dalam membuat program menggunakan Python,
+mulai dari aplikasi sederhana berbasis terminal, pengolahan data,
+otomatisasi tugas, hingga pengembangan web menggunakan Flask dan Django.
+</p>
+
+<br>
+
+<p>
+Fokus saya adalah membuat solusi yang efisien dan mudah digunakan
+melalui teknologi modern.
+</p>
+</div>
+</div>
+</section>
+
+<section id="skills">
+<h2 class="section-title">Skills</h2>
+
+<div class="skills">
+<div class="skill-card">
+<h3>Python</h3>
+<p>OOP, Function, Data Structure</p>
+</div>
+
+<div class="skill-card">
+<h3>HTML & CSS</h3>
+<p>Responsive Web Design</p>
+</div>
+
+<div class="skill-card">
+<h3>JavaScript</h3>
+<p>Interactive Website</p>
+</div>
+
+<div class="skill-card">
+<h3>Flask</h3>
+<p>Backend Development</p>
+</div>
+
+<div class="skill-card">
+<h3>MySQL</h3>
+<p>Database Management</p>
+</div>
+
+<div class="skill-card">
+<h3>Data Analysis</h3>
+<p>Pandas & NumPy</p>
+</div>
+</div>
+</section>
+
+<section id="projects">
+<h2 class="section-title">Project Python</h2>
+
+<div class="projects">
+
+<div class="project-card">
+<h3>Sistem Penilaian Mahasiswa</h3>
+<p>
+Program Python untuk menghitung nilai akhir mahasiswa
+berdasarkan tugas, UTS, dan UAS.
+</p>
+</div>
+
+<div class="project-card">
+<h3>Kalkulator BMI</h3>
+<p>
+Aplikasi Python untuk menghitung Body Mass Index
+dan menentukan kategori kesehatan pengguna.
+</p>
+</div>
+
+<div class="project-card">
+<h3>Manajemen Data Siswa</h3>
+<p>
+CRUD sederhana menggunakan Python dan database MySQL.
+</p>
+</div>
+
+<div class="project-card">
+<h3>Analisis Data Penjualan</h3>
+<p>
+Menggunakan Pandas untuk visualisasi dan analisis data.
+</p>
+</div>
+
+<div class="project-card">
+<h3>Website Flask</h3>
+<p>
+Website dinamis menggunakan Flask dan Bootstrap.
+</p>
+</div>
+
+<div class="project-card">
+<h3>Machine Learning Prediction</h3>
+<p>
+Model prediksi menggunakan Scikit-Learn.
+</p>
+</div>
+
+</div>
+</section>
+
+<section id="contact">
+<h2 class="section-title">Kontak</h2>
+
+<div class="contact">
+<p>📧 Email : zahrah@example.com</p>
+<p>📱 WhatsApp : 08xxxxxxxxxx</p>
+<p>💻 GitHub : github.com/zahrah2808</p>
+<p>📍 Indonesia</p>
+</div>
+</section>
+
+<footer>
+<p>© 2025 Portfolio Python Developer | Dibuat dengan HTML, CSS & JavaScript</p>
+</footer>
+
+<script>
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+anchor.addEventListener('click', function(e){
+e.preventDefault();
+
+document.querySelector(this.getAttribute('href'))
+.scrollIntoView({
+behavior:'smooth'
+});
+});
+});
+</script>
+
+</body>
+</html>
